@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Responsivo</title>
+    <style>
+        .banner-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%; /* Ocupa toda a largura disponível */
+            height: 100vh; /* Ajusta a altura para ocupar a viewport */
+            padding: 0;
+            margin: 0;
+            overflow: hidden; /* Remove barras de rolagem */
+            box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+        }
+
+        .banner-container {
+            width: 100%;
+            max-width: 92%; /* Ajuste a largura para se adaptar a 23 linhas de colunas */
+            aspect-ratio: 16 / 9; /* Mantém a proporção retangular 16:9 */
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+            transition: filter 0.3s, box-shadow 0.3s; /* Transição suave para o filtro e sombra */
+            margin: auto; /* Garante que o contêiner esteja centralizado */
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: filter 0.3s; /* Transição suave para o filtro */
+        }
+
+        .banner-container:hover img {
+            filter: brightness(70%) grayscale(30%); /* Escurece a imagem para cinza ao passar o mouse */
+        }
+
+        .play-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.1); /* Fundo escuro semi-transparente */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 24px;
+            opacity: 0;
+            transition: opacity 0.3s; /* Transição suave para a opacidade */
+        }
+
+        .banner-container:hover .play-button {
+            opacity: 1; /* Mostra o botão de play ao passar o mouse */
+        }
+
+        /* Remove margens e paddings padrões para evitar espaços brancos */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            overflow: hidden; /* Remove barras de rolagem */
+        }
+
+        /* Ajuste para dispositivos móveis */
+        @media (max-width: 768px) {
+            .banner-container {
+                max-width: 90%; /* Ajuste o tamanho máximo para dispositivos móveis */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-wrapper">
+        <a href="URL_DA_PAGINA_DE_DESTINO" class="banner-container" target="_self">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/8tZXIVmGubplrBRmZfc_fw/1679x945sr.jpg" alt="Banner">
+            <div class="play-button"></div> <!-- Botão de play -->
+        </a>
+    </div>
+</body>
+</html>
+
