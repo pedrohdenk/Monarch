@@ -1,0 +1,7 @@
+<div style="text-align: center; overflow: hidden;">
+    <p style="font-family: Arial, sans-serif; font-size: 28px; font-weight: bold; color: white; transition: transform 0.3s, color 0.3s, text-shadow 0.3s;" 
+       onmouseover="this.style.color='#D8BFD8'; this.style.transform='scale(1.1)'; this.style.textShadow='2px 2px 5px rgba(0, 0, 0, 0.3)';"
+       onmouseout="this.style.color='white'; this.style.transform='scale(1)'; this.style.textShadow='none';">
+       Exlore o Apple TV+
+    </p>
+</div>
