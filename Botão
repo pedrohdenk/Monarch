@@ -1,0 +1,8 @@
+<div style="text-align: center; margin-top: 20px;">
+    <button style="font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; color: black; background-color: white; border: none; border-radius: 25px; padding: 10px 20px; cursor: pointer; transition: box-shadow 0.3s, filter 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px; width: fit-content;"
+        onmouseover="this.style.boxShadow='0px 4px 10px rgba(0, 0, 0, 0.2)'; this.style.filter='brightness(1.1)';"
+        onmouseout="this.style.boxShadow='none'; this.style.filter='brightness(1)';">
+        <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="Apple logo" style="width: 20px; height: 20px;">
+        Experimentar 7 dias
+    </button>
+</div>
